@@ -7,7 +7,7 @@
 <title>Hello World Form</title>
 </head>
 <body>
-	<form action="processForm" method="GET">
+	<form action="processFormVersion2" method="GET">
 		<input type="text" name="studentName" placeholder="naam likh bsdk"/>
 		<input type="submit" />
 	</form>
