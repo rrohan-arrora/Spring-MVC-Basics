@@ -18,6 +18,13 @@
 			</form:select>
 			<br><br>
 			
+			Language:
+			Java: <form:radiobutton path="selectLanguage" value="Java"/>
+			C#: <form:radiobutton path="selectLanguage" value="C#"/>
+			RUBY: <form:radiobutton path="selectLanguage" value="RUBY"/>
+			Nodejs: <form:radiobutton path="selectLanguage" value="Nodejs"/>
+			<br><br>
+			
 			<input type="submit" value="Submit" />
 		</form:form>
 	</body>
