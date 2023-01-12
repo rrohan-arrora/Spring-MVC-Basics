@@ -14,12 +14,7 @@
 			
 			Country:
 			<form:select path="country">
-				<form:option value="IND" label="INDIA" />
-				<form:option value="ARG" label="ARGENTINA" />
-				<form:option value="GER" label="GERMANY" />
-				<form:option value="USA" label="USA" />
-				<form:option value="AUS" label="AUSTRALIA" />
-					
+				<form:options items="${students.countryOptions}" />					
 			</form:select>
 			<br><br>
 			
@@ -35,5 +30,7 @@ when mvc form is submitted, spring mvc calls
 student.setFirstName and student.setLastName
 
 All this happens internally.
+
+student.countryOptions will turn to student.getCountryOptions as getter method is already defined.
 -->
 

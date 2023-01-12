@@ -1,6 +1,6 @@
 <html>
 	<body>
-		<h1>Ho gya admission tera, naam dekh niche </h1>
+		<h2>We welcome the below student on board to AMAZON. We hope you would have best time here developing and enjoying. </h2>
 		
 		<h2>${students.firstName} ${students.lastName} from ${students.country}</h2>
 	</body>
