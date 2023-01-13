@@ -25,6 +25,13 @@
 			Nodejs: <form:radiobutton path="selectLanguage" value="Nodejs"/>
 			<br><br>
 			
+			Sex:
+			Male: <form:checkbox path="selectSex" value="Male"/>
+			Female: <form:checkbox path="selectSex" value="Female"/>
+			Binary: <form:checkbox path="selectSex" value="Binary"/>
+			Other: <form:checkbox path="selectSex" value="Other"/>
+			<br><br>
+			
 			<input type="submit" value="Submit" />
 		</form:form>
 	</body>

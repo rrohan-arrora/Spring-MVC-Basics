@@ -9,6 +9,7 @@ public class Student {
 	private String country;
 	private LinkedHashMap<String, String> countryOptions;
 	private String selectLanguage;
+	private String selectSex;
 	
 	public Student() {
 		countryOptions = new LinkedHashMap<String, String>();
@@ -53,11 +54,13 @@ public class Student {
 	public void setSelectLanguage(String selectLanguage) {
 		this.selectLanguage = selectLanguage;
 	}
-	
-	
-	
-	
-	
-	
 
+	public String getSelectSex() {
+		return selectSex;
+	}
+
+	public void setSelectSex(String selectSex) {
+		this.selectSex = selectSex;
+	}
+	
 }

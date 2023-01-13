@@ -2,7 +2,7 @@
 	<body>
 		<h2>We welcome the below student on board. </h2>
 		
-		<h2>${students.firstName} ${students.lastName} from ${students.country}. Your expertise is in ${students.selectLanguage}</h2>
+		<h2>${students.firstName}(${students.selectSex}) ${students.lastName} from ${students.country}. Your expertise is in ${students.selectLanguage}</h2>
 	</body>
 </html>
 
