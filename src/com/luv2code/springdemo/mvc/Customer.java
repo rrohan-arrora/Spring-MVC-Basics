@@ -2,14 +2,19 @@ package com.luv2code.springdemo.mvc;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.luv2code.springdemo.mvc.valildation.CourseCode;
+
 public class Customer {
 	
 	private String firstName;
+	
+	@CourseCode
+	private String courseCode;
+	
 	
 	@NotNull(message="field can't be empty.")
 	@Min(value=0, message="must be greater than or equal to 0")
@@ -46,6 +51,12 @@ public class Customer {
 	}
 	public void setPostalCode(String postalCode) {
 		this.postalCode = postalCode;
+	}
+	public String getCourseCode() {
+		return courseCode;
+	}
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
 	}
 	
 	
