@@ -23,6 +23,13 @@
 		<property name="prefix" value="/WEB-INF/view/" /> <!-- prefix will be added before view pages -->
 		<property name="suffix" value=".jsp" /> <!-- suffix will be appended to the view pages url -->
 	</bean>
+	
+	<!-- Load custom message resources -->
+	<!-- bean id matches with  resource bundle messageSource package -->
+	<bean id="messageSource"
+        class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basenames" value="resources/messages" />         
+    </bean>
 
 </beans>
 
