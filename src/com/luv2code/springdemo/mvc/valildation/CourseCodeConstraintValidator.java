@@ -1,0 +1,22 @@
+package com.luv2code.springdemo.mvc.valildation;
+
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
+
+public class CourseCodeConstraintValidator 
+			implements ConstraintValidator<CourseCode, String>{
+	
+	private String coursePrefix;
+	public void initialize(CourseCode theCourseCode) {
+		// TODO Auto-generated method stub
+		coursePrefix = theCourseCode.value();
+	}
+
+	public boolean isValid(String theCode, ConstraintValidatorContext theConstraintValidatorContext) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
+
+}
