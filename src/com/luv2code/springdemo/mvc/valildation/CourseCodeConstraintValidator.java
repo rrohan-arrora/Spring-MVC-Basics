@@ -14,7 +14,17 @@ public class CourseCodeConstraintValidator
 
 	public boolean isValid(String theCode, ConstraintValidatorContext theConstraintValidatorContext) {
 		// TODO Auto-generated method stub
-		return false;
+		
+		boolean result;
+		if(theCode != null) {
+			result = theCode.startsWith(coursePrefix);
+		}else {
+			result = true; // pass it as the field is not needed
+		}
+		
+		
+		
+		return result;
 	}
 
 	
